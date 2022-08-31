@@ -1,4 +1,4 @@
-import {CloverTransportObserver} from './CloverTransportObserver';
+import type {CloverTransportObserver} from './CloverTransportObserver';
 import {ObjectMessageSender} from './ObjectMessageSender';
 
 /**

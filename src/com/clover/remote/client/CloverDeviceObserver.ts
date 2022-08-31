@@ -1,5 +1,5 @@
 import * as sdk from 'remote-pay-cloud-api';
-import {CloverDevice} from './device/CloverDevice';
+import type { CloverDevice } from './device/CloverDevice';
 
 /**
  * Clover Device Observer

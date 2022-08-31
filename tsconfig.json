@@ -1,11 +1,34 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
+        "composite": true,
+        "declarationMap": true,
+        "pretty": true,
+        "target": "es6",
         "moduleResolution": "node",
         "declaration": true,
         "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "esModuleInterop": true,
         "sourceMap": false,
-        "types": ["remote-pay-cloud-api", "node"]
+        "noEmitOnError": false,
+        "experimentalDecorators": true,
+        "noUnusedParameters": false,
+        "noUnusedLocals": false,
+        "importHelpers": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "types": [
+            "remote-pay-cloud-api",
+            "node"
+        ],
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "rootDir": "."
     }
 }

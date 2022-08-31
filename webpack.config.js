@@ -1,16 +1,15 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
     mode: 'production',
-    entry: {
-        "clover": "./index.js"
-    },
+    entry: "./dist/src/com/clover/index.js",
     output: {
-        path: path.join(__dirname, 'bundle'),
-        filename: '[name].js',
-        libraryTarget: 'var',
-        library: 'clover'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+        library: {
+            name: 'clover',
+            type: 'umd'
+        }
     },
     module: {
         rules: [
@@ -22,6 +21,6 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ ".tsx", ".ts", ".js" ]
+        extensions: [".tsx", ".ts", ".js"]
     }
 };

@@ -1,6 +1,6 @@
 import {CloverWebSocketInterface} from '../../../../websocket/CloverWebSocketInterface';
-import {WebSocketListener} from '../../../../websocket/WebSocketListener';
-import {CloverWebSocketClientListener} from './CloverWebSocketClientListener';
+import type {WebSocketListener} from '../../../../websocket/WebSocketListener';
+import type {CloverWebSocketClientListener} from './CloverWebSocketClientListener';
 import {WebSocketState} from '../../../../websocket/WebSocketState';
 import {Logger} from '../../util/Logger';
 

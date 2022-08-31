@@ -1,6 +1,6 @@
 {
-  "name": "remote-pay-cloud",
-  "version": "4.1.2",
+  "name": "@xuantan97/remote-pay-cloud",
+  "version": "1.0.3",
   "description": "Access Clover devices through the cloud.",
   "keywords": [
     "clover",
@@ -8,6 +8,9 @@
     "POS",
     "websocket",
     "payment"
+  ],
+  "files": [
+    "dist/"
   ],
   "bugs": {
     "url": "https://github.com/clover/remote-pay-cloud/issues"
@@ -18,23 +21,27 @@
     "email": "sdk@clover.com",
     "url": "http://www.clover.com"
   },
-  "main": "index.js",
-  "types": "./types/index.d.ts",
+  "main": "./dist/src/com/clover/index.js",
+  "types": "./dist/src/com/clover/types.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/clover/remote-pay-cloud"
   },
   "scripts": {
-    "build": "gulp",
+    "build": "tsc && webpack",
+    "prepublishOnly": "npm run clean && npm run build",
     "updateVersion": "scripts/postversion.sh \"$npm_package_version\"",
     "dev-publish": "npm version prerelease --no-git-tag-version && npm publish --tag dev",
-    "test": "mocha test/unit-tests --exit"
+    "test": "mocha test/unit-tests --exit",
+    "clean": "rimraf ./dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
     "eventemitter3": "4.0.7",
+    "events": "^3.3.0",
     "remote-pay-cloud-api": "4.0.5"
   },
   "devDependencies": {
+    "@types/events": "^3.0.0",
     "@types/node": "12.6.8",
     "chai": "4.2.0",
     "del": "2.2.2",
@@ -49,6 +56,8 @@
     "ts-loader": "3.0.5",
     "typedoc": "0.19.2",
     "typescript": "3.9.7",
-    "webpack-stream": "6.1.1"
+    "webpack": "^5.73.0",
+    "rimraf": "^3.0.2",
+    "webpack-cli": "^4.10.0"
   }
 }

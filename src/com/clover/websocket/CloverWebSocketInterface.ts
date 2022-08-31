@@ -1,4 +1,4 @@
-import {WebSocketListener} from './WebSocketListener'
+import type {WebSocketListener} from './WebSocketListener'
 import {WebSocketState} from './WebSocketState';
 import {Logger} from '../remote/client/util/Logger';
 

@@ -17,35 +17,35 @@ var loyalty = sdk.loyalty;
 var CloverID = require("./CloverID.js");
 
 // These exports expose the CloverConnector and supporting objects
-var CloverConnector = require('./dist/com/clover/remote/client/CloverConnector.js').CloverConnector;
-var CloverDeviceFactory = require('./dist/com/clover/remote/client/device/CloverDeviceFactory.js').CloverDeviceFactory;
+var CloverConnector = require('./dist/src/com/clover/remote/client/CloverConnector.js').CloverConnector;
+var CloverDeviceFactory = require('./dist/src/com/clover/remote/client/device/CloverDeviceFactory.js').CloverDeviceFactory;
 
-var Logger = require('./dist/com/clover/remote/client/util/Logger.js').Logger;
-var DebugConfig = require('./dist/com/clover/remote/client/util/DebugConfig.js').DebugConfig;
-var HttpSupport = require('./dist/com/clover/util/HttpSupport.js').HttpSupport;
-var ImageUtil = require('./dist/com/clover/util/ImageUtil.js').ImageUtil;
+var Logger = require('./dist/src/com/clover/remote/client/util/Logger.js').Logger;
+var DebugConfig = require('./dist/src/com/clover/remote/client/util/DebugConfig.js').DebugConfig;
+var HttpSupport = require('./dist/src/com/clover/util/HttpSupport.js').HttpSupport;
+var ImageUtil = require('./dist/src/com/clover/util/ImageUtil.js').ImageUtil;
 
-var WebSocketCloverDeviceConfiguration = require('./dist/com/clover/remote/client/device/WebSocketCloverDeviceConfiguration.js').WebSocketCloverDeviceConfiguration;
-var WebSocketPairedCloverDeviceConfiguration = require('./dist/com/clover/remote/client/device/WebSocketPairedCloverDeviceConfiguration.js').WebSocketPairedCloverDeviceConfiguration;
-var WebSocketPairedCloverDeviceConfigurationBuilder = require('./dist/com/clover/remote/client/device/WebSocketPairedCloverDeviceConfiguration.js').WebSocketPairedCloverDeviceConfigurationBuilder;
-var WebSocketCloudCloverDeviceConfiguration = require('./dist/com/clover/remote/client/device/WebSocketCloudCloverDeviceConfiguration.js').WebSocketCloudCloverDeviceConfiguration;
-var WebSocketCloudCloverDeviceConfigurationBuilder = require('./dist/com/clover/remote/client/device/WebSocketCloudCloverDeviceConfiguration.js').WebSocketCloudCloverDeviceConfigurationBuilder;
+var WebSocketCloverDeviceConfiguration = require('./dist/src/com/clover/remote/client/device/WebSocketCloverDeviceConfiguration.js').WebSocketCloverDeviceConfiguration;
+var WebSocketPairedCloverDeviceConfiguration = require('./dist/src/com/clover/remote/client/device/WebSocketPairedCloverDeviceConfiguration.js').WebSocketPairedCloverDeviceConfiguration;
+var WebSocketPairedCloverDeviceConfigurationBuilder = require('./dist/src/com/clover/remote/client/device/WebSocketPairedCloverDeviceConfiguration.js').WebSocketPairedCloverDeviceConfigurationBuilder;
+var WebSocketCloudCloverDeviceConfiguration = require('./dist/src/com/clover/remote/client/device/WebSocketCloudCloverDeviceConfiguration.js').WebSocketCloudCloverDeviceConfiguration;
+var WebSocketCloudCloverDeviceConfigurationBuilder = require('./dist/src/com/clover/remote/client/device/WebSocketCloudCloverDeviceConfiguration.js').WebSocketCloudCloverDeviceConfigurationBuilder;
 
-var CloverTransport = require('./dist/com/clover/remote/client/transport/CloverTransport.js').CloverTransport;
-var CloverTransportObserver = require('./dist/com/clover/remote/client/transport/CloverTransportObserver.js').CloverTransportObserver;
-var WebSocketCloverTransport = require('./dist/com/clover/remote/client/transport/websocket/WebSocketCloverTransport.js').WebSocketCloverTransport;
-var WebSocketState = require('./dist/com/clover/websocket/WebSocketState.js').WebSocketState;
-var CloverWebSocketInterface = require('./dist/com/clover/websocket/CloverWebSocketInterface.js').CloverWebSocketInterface;
-var BrowserWebSocketImpl = require('./dist/com/clover/websocket/BrowserWebSocketImpl.js').BrowserWebSocketImpl;
-var JSONToCustomObject = require('./dist/com/clover/json/JSONToCustomObject.js').JSONToCustomObject;
-var Version = require('./dist/com/clover/Version.js').Version;
+var CloverTransport = require('./dist/src/com/clover/remote/client/transport/CloverTransport.js').CloverTransport;
+var CloverTransportObserver = require('./dist/src/com/clover/remote/client/transport/CloverTransportObserver.js').CloverTransportObserver;
+var WebSocketCloverTransport = require('./dist/src/com/clover/remote/client/transport/websocket/WebSocketCloverTransport.js').WebSocketCloverTransport;
+var WebSocketState = require('./dist/src/com/clover/websocket/WebSocketState.js').WebSocketState;
+var CloverWebSocketInterface = require('./dist/src/com/clover/websocket/CloverWebSocketInterface.js').CloverWebSocketInterface;
+var BrowserWebSocketImpl = require('./dist/src/com/clover/websocket/BrowserWebSocketImpl.js').BrowserWebSocketImpl;
+var JSONToCustomObject = require('./dist/src/com/clover/json/JSONToCustomObject.js').JSONToCustomObject;
+var Version = require('./dist/src/com/clover/Version.js').Version;
 
-var CloverConnectorFactoryBuilder = require('./dist/com/clover/remote/client/CloverConnectorFactoryBuilder.js').CloverConnectorFactoryBuilder;
-var ICloverConnectorFactory = require('./dist/com/clover/remote/client/ICloverConnectorFactory.js').ICloverConnectorFactory;
-var LoyaltyDataTypes = require('./dist/com/clover/remote/client/faux_enums/LoyaltyDataTypes.js').LoyaltyDataTypes;
+var CloverConnectorFactoryBuilder = require('./dist/src/com/clover/remote/client/CloverConnectorFactoryBuilder.js').CloverConnectorFactoryBuilder;
+var ICloverConnectorFactory = require('./dist/src/com/clover/remote/client/ICloverConnectorFactory.js').ICloverConnectorFactory;
+var LoyaltyDataTypes = require('./dist/src/com/clover/remote/client/faux_enums/LoyaltyDataTypes.js').LoyaltyDataTypes;
 // Following is exported explicitly because of backwards compatibility
-var CloverConnectorFactory = require('./dist/com/clover/remote/client/CloverConnectorFactory.js').CloverConnectorFactory;
-var CardEntryMethods = require('./dist/com/clover/remote/client/CardEntryMethods.js').CardEntryMethods;
+var CloverConnectorFactory = require('./dist/src/com/clover/remote/client/CloverConnectorFactory.js').CloverConnectorFactory;
+var CardEntryMethods = require('./dist/src/com/clover/remote/client/CardEntryMethods.js').CardEntryMethods;
 
 // Export all of the pieces.
 module.exports = {
